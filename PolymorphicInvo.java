@@ -1,24 +1,24 @@
 class Employee
 {
-    void Computesalary()
-    {
-        System.out.println("Employee salary is 10000");
-    }
+  void Computesalary()
+  {
+    System.out.println("Employee salary is 10000");
+  }
 }
 class Manager extends Employee
 {
-    void Computesalary()
-    {
-        System.out.println("Manager salary is 200000");
-    }
+  void Computesalary()
+  {
+    System.out.println("Manager salary is 200000");
+  }
 }
-class computesalary
+class PolymorphicInvo
 {
-    public static void main(String[] args) 
-    {
-        Employee e = new Employee();
-        Employee e1 = new Manager();
-        e.Computesalary();
-        e1.Computesalary();
-    }
+  public static void main(String[] args) 
+  {
+    Employee e = new Employee();
+    Employee e1 = new Manager();
+    e.Computesalary();
+    e1.Computesalary();
+  }
 }
