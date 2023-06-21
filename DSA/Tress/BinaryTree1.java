@@ -97,10 +97,10 @@ public class BinaryTree1 {
         if (root == null) {
             return 0;
         }
-        int leftnodes = height(root.right)+1;
-        // int rightnodes = height(root.right);
-        // int totalheight = Math.max(leftnodes, rightnodes) + 1;
-        return leftnodes;
+        int leftnodes = height(root.left);
+        int rightnodes = height(root.right);
+        int totalheight = Math.max(leftnodes, rightnodes) + 1;
+        return totalheight;
     }
 
     public static void preorder(Node root) {
